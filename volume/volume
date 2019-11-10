@@ -71,7 +71,7 @@ format() {
   output=$(perl -ne "$perl_filter")
 
   if [[ "$output" -eq "off" ]]; then
-    echo '<span foreground="#f22c40"></span>'
+    echo '<span foreground="#d7787d"></span>'
   elif [[ "$output" -le 50 ]]; then
     echo " $output"
   else

@@ -56,15 +56,15 @@ END {
 	printf("%.1fG\n", used)
 
 	# short text
-	# printf("%.f%%\n", pct)
+	printf("%.f%%\n", pct)
 
 	# color
 	if (pct > 90) {
-		print("#FF0000")
+		print("#d7787d")
 	} else if (pct > 80) {
-		print("#FFAE00")
+		print("#d08770")
 	} else if (pct > 70) {
-		print("#FFF600")
+		print("#ebcb8b")
 	}
 }
 ' /proc/meminfo
